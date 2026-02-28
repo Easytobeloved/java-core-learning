@@ -13,7 +13,7 @@ import java.util.Date;
  * 5.方法返回的对象所属的类，在编写包含该静态工厂方法的类时可以不存在
  * 静态工厂方法的缺点
  * 1.，类如果不含公有的或者受保护的构造器，就不能被子类化。
- * 2.程序员很难发现它们（静态工厂方法不想构造器那样在API文档中明确标识出来）
+ * 2.程序员很难发现它们（静态工厂方法不像构造器那样在API文档中明确标识出来）
  */
 public class staticFactory {
     public static void main(String[] args) {
