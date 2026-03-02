@@ -1,8 +1,10 @@
 package com.effective.factory;
 
 import javax.xml.crypto.Data;
+import java.math.BigInteger;
 import java.time.Instant;
 import java.util.Date;
+import java.util.EnumSet;
 
 /**
  * 静态工厂方法的优势
@@ -20,6 +22,11 @@ public class staticFactory {
         // from一一类型转换方法，它只有单个参数，返回该类型的一个相对应的实例，例如：
         Date d = Date.from(Instant.now());
         System.out.println(d.toString());
+        //of 聚合方法，带有多个参数，返回该类型的一个实例，把它们合并起来，例如:
+        //Set<Rank> faceCards = EnumSet.of()
+        //valueOf一一比 from of 更烦琐的 种替代方法，例如
+        BigInteger me = BigInteger.valueOf(Integer.MAX_VALUE);
+        System.out.println(me);
     }
 
 
