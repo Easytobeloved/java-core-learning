@@ -29,4 +29,9 @@ public abstract class Pizza {
     Pizza(Builder<?> builder){
         toppings=builder.toppings.clone();
     }
+
+    public static void main(String[] args) {
+        NyPizza pizza = new NyPizza.Builder(NyPizza.Size.SMALL).addTopping(Topping.SAUSAGE).addTopping(Topping.ONION).build();
+        Calzone calzone = new Calzone.Builder().addTopping(Topping.HAM).sauceInside().build();
+    }
 }
